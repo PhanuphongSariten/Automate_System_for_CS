@@ -1,23 +1,127 @@
 import pyautogui
 import time
+import webbrowser
+
+def CSfloatLatestSalesButton():
+    CSfloatLatestSalesButtonX, CSfloatLatestSalesButtonY = pyautogui.locateCenterOnScreen('SystemAutomate/CSfloatLatestSalesButton.jpg',confidence=0.7)
+    pyautogui.click(CSfloatLatestSalesButtonX, CSfloatLatestSalesButtonY)
 
 def CsfloatPriceText():
     CsfloatPriceTextX, CsfloatPriceTextY = pyautogui.locateCenterOnScreen('SystemAutomate\CsfloatPriceText.jpg',confidence=0.8)
     pyautogui.moveTo(CsfloatPriceTextX, CsfloatPriceTextY)
 
-def CSfloatLatestSalesButton():
-    CSfloatLatestSalesButtonX, CSfloatLatestSalesButtonY = pyautogui.locateCenterOnScreen('SystemAutomate/CSfloatLatestSalesButton.jpg',confidence=0.7)
-    pyautogui.moveTo(CSfloatLatestSalesButtonX, CSfloatLatestSalesButtonY)
+def GGChromeImg():
+    GGChromeImgX, GGChromeImgY = pyautogui.locateCenterOnScreen('SystemAutomate\image\setup\GGChromeimg.jpg',confidence=0.8)
+    pyautogui.click(GGChromeImgX, GGChromeImgY)
 
-def CsfloatSoldText():
-    CsfloatSoldTextX, CsfloatSoldTextY = pyautogui.locateCenterOnScreen('SystemAutomate/CsfloatSoldText.jpg',confidence=0.8)
-    pyautogui.moveTo(CsfloatSoldTextX, CsfloatSoldTextY)
+def GoogleChromePhanuphongIMG():
+    GoogleChromePhanuphongIMGX, GoogleChromePhanuphongIMGY = pyautogui.locateCenterOnScreen('SystemAutomate\image\setup\GoogleChromePhanuphongIMG.jpg',confidence=0.8)
+    pyautogui.click(GoogleChromePhanuphongIMGX, GoogleChromePhanuphongIMGY)
 
 def inputPaste():
     inputPasteX, inputPasteY = pyautogui.locateCenterOnScreen('SystemAutomate\inputPaste.jpg',confidence=0.8)
     pyautogui.click(inputPasteX, inputPasteY)
 
-#pyautogui.hotkey('ctrl', '2')
+###AutoRunโดยที่เราไม่ต้องแตต้องคอมแม้แต่ขั้นตอนเดียว
+    ##เปิด GoogleChromePhanuphong
+        #กด windowkey
+pyautogui.press('win')
+time.sleep(1)
+        #หารูปGoogleChromecแล้วกด
+GGChromeImg()
+time.sleep(1)
+        #หารูปGoogleChromePhanuphong
+GoogleChromePhanuphongIMG()
+time.sleep(1)
+        #กด ctrl+n
+pyautogui.hotkey('ctrl', 'n')
+time.sleep(1)
+    ##setup set1
+        #เปิดSheetspaste
+webbrowser.open_new_tab('https://docs.google.com/spreadsheets/d/1Mj7pcdYvecO_ROAAALJ4ZxLtleG9q-Q4D53QEMEj0OQ/edit?gid=1260826741#gid=1260826741')
+time.sleep(1)
+pyautogui.hotkey('ctrl', '1')
+time.sleep(0.5)
+pyautogui.hotkey('ctrl', 'w')
+        #พร้อมset1
+            #cf
+                #open website set1
+webbrowser.open_new_tab('https://csfloat.com/item/721399812410445663')
+webbrowser.open_new_tab('https://csfloat.com/item/715947988731691591')
+webbrowser.open_new_tab('https://csfloat.com/item/721414507259364942')
+webbrowser.open_new_tab('https://csfloat.com/item/721444819209159403')
+webbrowser.open_new_tab('https://csfloat.com/item/721433107407964796')
+webbrowser.open_new_tab('https://csfloat.com/item/721340259891283598')
+webbrowser.open_new_tab('https://csfloat.com/item/721370175433212063')
+webbrowser.open_new_tab('https://csfloat.com/item/721443940267589854')
+webbrowser.open_new_tab('https://csfloat.com/item/721390977125846368')
+webbrowser.open_new_tab('https://csfloat.com/item/721443561865871416')
+webbrowser.open_new_tab('https://csfloat.com/item/721454527663967198')
+
+time.sleep(8)
+                #reload website set1
+pyautogui.hotkey('ctrl', '1')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+                #เปิดแท็บ Latest sales ค้างไว้
+pyautogui.hotkey('ctrl', '2')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+pyautogui.hotkey('ctrl', 'tab')
+time.sleep(1)
+CSfloatLatestSalesButton()
+time.sleep(1)
+                #เปิดแท็บ Latest sales ค้างไว้
+pyautogui.hotkey('ctrl', '2')
+time.sleep(1)
 CsfloatPriceText()
 pyautogui.moveRel(-15,55)
 pyautogui.tripleClick()
@@ -341,4 +445,40 @@ pyautogui.hotkey('enter')
 pyautogui.hotkey('ctrl', 'a')
 pyautogui.hotkey('ctrl', 'v')
 pyautogui.hotkey('enter')
+        #ปิดแท็บทั้งหมด 11 แท็บ
+pyautogui.hotkey('ctrl', '2')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+pyautogui.hotkey('ctrl', 'w')
+            #marketcs
+                #open 11 tab
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+webbrowser.open_new_tab('')
+                #process
+        #พร้อมset2
 
+
+
+
+
+#Locate รูป CSfloatLatestSalesButton.jpg -> คลิ๊ก -> เปลี่ยน url
+
+
+##CsfloatToRub()
