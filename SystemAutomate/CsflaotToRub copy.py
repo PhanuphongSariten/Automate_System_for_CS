@@ -1,6 +1,11 @@
 import pyautogui
 import time
 import webbrowser
+import Url
+
+def InputURL(url):
+webbrowser.open_new_tab('https://csfloat.com/item/721399812410445663')
+    
 
 def CSfloatLatestSalesButton():
     CSfloatLatestSalesButtonX, CSfloatLatestSalesButtonY = pyautogui.locateCenterOnScreen('SystemAutomate/CSfloatLatestSalesButton.jpg',confidence=0.7)
@@ -21,6 +26,24 @@ def GoogleChromePhanuphongIMG():
 def inputPaste():
     inputPasteX, inputPasteY = pyautogui.locateCenterOnScreen('SystemAutomate\inputPaste.jpg',confidence=0.8)
     pyautogui.click(inputPasteX, inputPasteY)
+
+#ช่อง input url (มีทั้งหมด 8 website)
+#Snakebite Case
+
+#CS:GO Weapon Case 2
+
+#CS:GO Weapon Case 3
+
+#eSports 2013 Case
+
+#Winter Offensive Weapon Case
+
+#Huntsman Weapon Case
+
+#CS:GO Weapon Case
+
+#eSports 2014 Summer Case
+
 
 ###AutoRunโดยที่เราไม่ต้องแตต้องคอมแม้แต่ขั้นตอนเดียว
     ##เปิด GoogleChromePhanuphong
@@ -46,7 +69,6 @@ pyautogui.hotkey('ctrl', 'w')
         #พร้อมset1
             #cf
                 #open website set1
-webbrowser.open_new_tab('https://csfloat.com/item/721399812410445663')
 webbrowser.open_new_tab('https://csfloat.com/item/715947988731691591')
 webbrowser.open_new_tab('https://csfloat.com/item/721414507259364942')
 webbrowser.open_new_tab('https://csfloat.com/item/721444819209159403')
